@@ -11,4 +11,8 @@
     </swiper>
   </view>
 
+  <view class="main-content">
+    <image src='{{ic_avatar}}' class='avatar'></image>
+  </view>
+
 </view>

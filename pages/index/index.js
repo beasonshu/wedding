@@ -15,7 +15,8 @@ Page({
     autoplay: true,
     interval: 3000,
     duration: 1000,
-    circular:true
+    circular: true,
+    ic_avatar: 'https://upload.jianshu.io/users/upload_avatars/6095830/2c92a70e-0a32-4347-bc1b-419536019afc?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240'
   },
   //事件处理函数
   bindViewTap: function() {
@@ -23,13 +24,13 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -51,10 +52,10 @@ Page({
       })
     }
   },
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
     // 触发下拉刷新时执行
     setTimeout(() => {
-      wx.stopPullDownRefresh()//通过方法调用刷新
+      wx.stopPullDownRefresh() //通过方法调用刷新
     }, 1000)
   },
   getUserInfo: function(e) {
