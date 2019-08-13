@@ -1,8 +1,7 @@
 <!--index.wxml-->
 <view class="container">
-
   <view class="page-section">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" >
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}" wx:key="*this">
         <swiper-item>
           <image src="{{item}}" class="swiper-item"></image>
@@ -12,7 +11,28 @@
   </view>
 
   <view class="main-content">
-    <image src='{{ic_avatar}}' class='avatar'></image>
+    <view class="quick-layout">
+      <view class="quick-item">
+        <image src='../image/quick_1.png' class='avatar' />
+        <text class="quick-item.text">福利专区</text>
+      </view>
+      <view class="quick-item">
+        <image src='../image/quick_2.png' class='avatar' />
+        <text class="quick-item.text">我的请柬</text>
+      </view>
+      <view class="quick-item">
+        <image src='../image/quick_3.png' class='avatar' />
+        <text class="quick-item.text">礼品商城</text>
+      </view>
+      <view class="quick-item">
+        <image src='../image/quick_4.png' class='avatar' />
+        <text class="quick-item.text">联系我们</text>
+      </view>
+
+
+
+    </view>
+
   </view>
 
 </view>
