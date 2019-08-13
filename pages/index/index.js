@@ -55,7 +55,17 @@ Page({
   onPullDownRefresh: function() {
     // 触发下拉刷新时执行
     setTimeout(() => {
-      wx.stopPullDownRefresh() //通过方法调用刷新
+      this.setData({
+        imgUrls:[
+          "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565696543045&di=c2b33467f8313c4607161284ced262e5&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F838ba61ea8d3fd1f97d14a90304e251f94ca5f44.jpg",
+          "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565696543045&di=57d4fe3e084bfab19a55da3696e4c8d0&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fitbbs%2F1011%2F18%2Fc0%2F5904016_1290049685719_1024x1024.jpg",
+          "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565696543045&di=6a61c2dd8698237343d1057dd98a1596&imgtype=0&src=http%3A%2F%2Fimage.xcar.com.cn%2Fattachments%2Fa%2Fday_141105%2F2014110511_fe55f356baeb917f99e9Q95QVNshO3Eo.jpg",
+          "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3243149245,4073544300&fm=26&gp=0.jpg"
+        ]
+      });
+      
+      this.onLoad();
+      wx.stopPullDownRefresh(); //通过方法调用刷新
     }, 1000)
   },
   getUserInfo: function(e) {

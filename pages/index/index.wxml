@@ -28,11 +28,7 @@
         <image src='../image/quick_4.png' class='avatar' />
         <text class="quick-item.text">联系我们</text>
       </view>
-
-
-
     </view>
-
   </view>
 
 </view>
