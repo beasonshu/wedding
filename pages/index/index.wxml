@@ -1,5 +1,8 @@
 <!--index.wxml-->
 <view class="container">
+<loading hidden="{{loadingHidden}}">
+        加载中...
+</loading>
   <view class="page-section">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}" wx:key="*this">

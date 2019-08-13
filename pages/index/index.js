@@ -16,6 +16,7 @@ Page({
     interval: 3000,
     duration: 1000,
     circular: true,
+    loadingHidden: true,
     ic_avatar: 'https://upload.jianshu.io/users/upload_avatars/6095830/2c92a70e-0a32-4347-bc1b-419536019afc?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240'
   },
   //事件处理函数
@@ -54,8 +55,13 @@ Page({
   },
   onPullDownRefresh: function() {
     // 触发下拉刷新时执行
+    this.showNavigationBarLoading;
+    this.setData({
+      loadingHidden: false
+    });
     setTimeout(() => {
       this.setData({
+        loadingHidden:true,
         imgUrls:[
           "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565696543045&di=c2b33467f8313c4607161284ced262e5&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F838ba61ea8d3fd1f97d14a90304e251f94ca5f44.jpg",
           "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565696543045&di=57d4fe3e084bfab19a55da3696e4c8d0&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fitbbs%2F1011%2F18%2Fc0%2F5904016_1290049685719_1024x1024.jpg",
@@ -75,5 +81,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  
 })
