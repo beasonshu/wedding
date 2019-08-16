@@ -47,9 +47,10 @@
         <view class="right-arrow" />
       </view>
     </view>
-    <view  wx:for="{{dataList.banquet}}" wx:for-index="index" wx:for-item="item">
-      <image src="{{item.thumbnail}}" class="thumbnail" ></image>
-    </view>
+    <block wx:for="{{dataList.banquet}}" wx:for-index="index" wx:for-item="item" wx:if="{{index<3}}">
+      <image src=" {{item.thumbnail}} " class="thumbnail" ></image>
+      <text>{{item.title}}</text>
+    </block>
   </view>
 
 
