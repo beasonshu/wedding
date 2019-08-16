@@ -78,7 +78,7 @@ page {
   font-family: PingFangSC-Medium;
   align-items: center;
   font-size: 35rpx;
-  font-weight: bold;
+  font-weight: lighter;
   color: black;
 }
 .header-tilte-right-layout {
