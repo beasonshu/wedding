@@ -1,7 +1,9 @@
 /**index.wxss**/
-page{
-  background-color: #f8f8f8 ;
+
+page {
+  background-color: #f8f8f8;
 }
+
 .page-section {
   width: 100%;
   height: 300rpx;
@@ -28,43 +30,83 @@ page{
   justify-content: space-around;
 }
 
-.quick-layout-content{
+.quick-layout-content {
   display: flex;
   width: 710rpx;
   margin-left: 20rpx;
   align-items: center;
   z-index: 2;
-  height: 120rpx;
+  height: 150rpx;
   border-radius: 8rpx;
   background: white;
-  justify-content: space-around
+  justify-content: space-around;
 }
-.quick-item{
+
+.quick-item {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.quick-item.text{
+.quick-item.text {
   font-size: 24rpx;
   margin-top: 5rpx;
 }
 
-.quick-layout-content:ti{
+.header-tilte-layout {
   display: flex;
+  justify-content: space-between;
   width: 710rpx;
- justify-content:space-between;
+  margin-left: 20rpx;
+  align-items: center;
+  z-index: 2;
+  height: 120rpx;
+  background: white;
+}
+
+.header-tilte-left-layout {
+  display: flex;
+  margin-left: 20rpx;
+  align-items: center;
 }
 
 .simple-linear {
   width: 5rpx;
   height: 30rpx;
-  align-items:flex-start;
-  background: linear-gradient(rgb(216, 81, 99),red);
+  align-items: flex-start;
+  background: linear-gradient(rgb(216, 81, 99), red);
 }
 
+.header-tilte-layout-left-text {
+  margin-left: 10rpx;
+  font-family: PingFangSC-Medium;
+  align-items: center;
+  font-size: 35rpx;
+  font-weight: bold;
+  color: black;
+}
+.header-tilte-right-layout {
+  display: flex;
+  margin-right: 20rpx;
+  align-items: center;
+  flex-direction: row;
+}
 
+.header-tilte-layout-right-text {
+  font-family: PingFangSC-Medium;
+  align-items: center;
+  font-size: 25rpx;
+  color: black;
+}
+
+.right-arrow {
+  width: 15rpx;
+  height: 15rpx;
+  border-top: 2rpx solid rgb(102, 100, 100);
+  border-right: 2rpx solid rgb(102, 100, 100);
+  transform: rotate(45deg);
+}
 
 .avatar {
   height: 50rpx;

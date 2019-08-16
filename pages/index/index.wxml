@@ -18,7 +18,7 @@
     <view class="quick-layout-content">
       <view class="quick-item">
 
-        <image src='../image/quick_1.png' class='avatar' bindtap='webDetail'/>
+        <image src='../image/quick_1.png' class='avatar' bindtap='webDetail' />
         <text class="quick-item.text">福利专区</text>
       </view>
       <view class="quick-item">
@@ -37,14 +37,17 @@
 
   </view>
 
-  <view class="card-layout" style="margin-top:20rpx;">
-    <view class="quick-layout-content:ti">
-      <view style="display: flex;">
-      <view class="simple-linear"/><text>www</text>
+  <view class="card-layout" style="margin-top:30rpx;">
+    <view class="header-tilte-layout">
+      <view class="header-tilte-left-layout">
+        <view class="simple-linear" />
+        <text class="header-tilte-layout-left-text">宴会厅</text>
       </view>
-      <view class="simple-linear"/>
+      <view class="header-tilte-right-layout">
+        <text class="header-tilte-layout-right-text">共3个</text>
+        <view class="right-arrow" />
+      </view>
     </view>
-
   </view>
 
 
