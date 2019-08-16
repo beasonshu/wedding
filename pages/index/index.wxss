@@ -81,12 +81,12 @@ page {
 
 .header-tilte-layout-left-text {
   margin-left: 10rpx;
-  font-family: PingFangSC-Medium;
+  font-family: Microsoft YaHei;
   align-items: center;
   font-size: 35rpx;
-  font-weight: lighter;
   color: black;
 }
+
 .header-tilte-right-layout {
   display: flex;
   margin-right: 20rpx;
@@ -95,9 +95,10 @@ page {
 }
 
 .header-tilte-layout-right-text {
-  font-family: PingFangSC-Medium;
+  font-family: Microsoft YaHei;
   align-items: center;
   font-size: 25rpx;
+  font-weight: lighter;
   color: black;
 }
 
@@ -109,7 +110,7 @@ page {
   transform: rotate(45deg);
 }
 
-.thumbnail{
+.thumbnail {
   padding-left: 20rpx;
   padding-right: 20rpx;
   height: 300rpx;
@@ -118,4 +119,11 @@ page {
   width: 670rpx;
 }
 
-
+.banquet-name-text {
+  font-family: Microsoft YaHei;
+  align-items: center;
+  font-size: 30rpx;
+  color: black;
+  padding-left: 20rpx;
+  margin-top: 10rpx;
+}
