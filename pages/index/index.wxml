@@ -50,6 +50,11 @@
     <block wx:for="{{dataList.banquet}}" wx:for-index="index" wx:for-item="item" wx:if="{{index<3}}">
       <image src=" {{item.thumbnail}} " class="thumbnail" />
       <text class="banquet-name-text">{{item.title}}</text>
+      <view > 
+       <text class="banquet-name-text">{{item.square}}</text>
+        <text class="banquet-name-text">{{item.floors}}</text>
+         <text class="banquet-name-text">{{item.tables}}</text>
+      </view>
     </block>
   </view>
 

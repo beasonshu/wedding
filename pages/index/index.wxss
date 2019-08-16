@@ -127,3 +127,8 @@ page {
   padding-left: 20rpx;
   margin-top: 10rpx;
 }
+.banquet-label-text{
+  font-family: Microsoft YaHei;
+  align-items: center;
+  color: rgb(192, 67, 67);
+}
