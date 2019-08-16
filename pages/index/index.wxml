@@ -37,8 +37,7 @@
 
   </view>
 
-  <view class="card-layout" style="margin-top:30rpx;">
-    <view class="header-tilte-layout">
+  <view class="header-tilte-layout" style="margin-top:30rpx;">
       <view class="header-tilte-left-layout">
         <view class="simple-linear" />
         <text class="header-tilte-layout-left-text">宴会厅</text>
@@ -48,7 +47,6 @@
         <view class="right-arrow" />
       </view>
     </view>
-  </view>
 
 
   <view wx:for="{{for_list}}" wx:for-index="index" wx:for-item="item">
