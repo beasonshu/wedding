@@ -22,8 +22,10 @@ page {
 }
 
 .card-layout {
-  width: 750rpx;
+  width: 710rpx;
   margin-left: 10rpt;
+  border-radius: 8rpx;
+  background: white;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -32,13 +34,9 @@ page {
 
 .quick-layout-content {
   display: flex;
-  width: 710rpx;
-  margin-left: 20rpx;
   align-items: center;
-  z-index: 2;
+  
   height: 150rpx;
-  border-radius: 8rpx;
-  background: white;
   justify-content: space-around;
 }
 
