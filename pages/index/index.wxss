@@ -51,6 +51,12 @@ page {
   margin-top: 5rpx;
 }
 
+.quick_icon {
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50rpx;
+}
+
 .header-tilte-layout {
   display: flex;
   justify-content: space-between;
@@ -112,17 +118,4 @@ page {
   width: 670rpx;
 }
 
-.avatar {
-  height: 50rpx;
-  width: 50rpx;
-  border-radius: 50rpx;
-}
 
-.card {
-  border: 2rpx solid #fff;
-  border-radius: 5rpx;
-  background-color: #fff;
-  box-shadow: 4rpx 1rpx 1rpx #ccc;
-  margin: 8rpx;
-  position: relative;
-}
