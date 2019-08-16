@@ -34,22 +34,25 @@
         <text class="quick-item.text">联系我们</text>
       </view>
     </view>
-    <text>fwefwe</text>
   </view>
 
-  <view class="header-tilte-layout" style="margin-top:30rpx;">
-    <view class="header-tilte-left-layout">
-      <view class="simple-linear" />
-      <text class="header-tilte-layout-left-text">宴会厅</text>
+  <view class="card-layout" style="margin-top:30rpx;">
+    <view class="header-tilte-layout">
+      <view class="header-tilte-left-layout">
+        <view class="simple-linear" />
+        <text class="header-tilte-layout-left-text">宴会厅</text>
+      </view>
+      <view class="header-tilte-right-layout">
+        <text class="header-tilte-layout-right-text">共3个</text>
+        <view class="right-arrow" />
+      </view>
     </view>
-    <view class="header-tilte-right-layout">
-      <text class="header-tilte-layout-right-text">共3个</text>
-      <view class="right-arrow" />
+    <view wx:for="{{for_list}}" wx:for-index="index" wx:for-item="item">
+      <text>这是第{{index}}个，他的name是{{item.name}}</text>
     </view>
   </view>
 
 
-  <view wx:for="{{for_list}}" wx:for-index="index" wx:for-item="item">
-    <text>这是第{{index}}个，他的name是{{item.name}}</text>
-  </view>
+
+
 </view>
