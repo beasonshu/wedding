@@ -47,9 +47,8 @@
         <view class="right-arrow" />
       </view>
     </view>
-    <view  wx:for="{{for_list}}" wx:for-index="index" wx:for-item="item"
-      style="margin-left:20rpx">
-      <text>这是第{{index}}个，他的name是{{item.name}}</text>
+    <view  wx:for="{{dataList.banquet}}" wx:for-index="index" wx:for-item="item">
+      <image src="{{item.thumbnail}}" class="thumbnail" ></image>
     </view>
   </view>
 

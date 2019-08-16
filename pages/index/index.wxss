@@ -103,6 +103,15 @@ page {
   transform: rotate(45deg);
 }
 
+.thumbnail{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  height: 300rpx;
+  align-items: center;
+  margin-top: 30rpx;
+  width: 670rpx;
+}
+
 .avatar {
   height: 50rpx;
   width: 50rpx;
