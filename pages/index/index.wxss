@@ -19,16 +19,16 @@ page{
   height: 300rpx;
 }
 
-.main-content {
+.card-layout {
   width: 750rpx;
   margin-left: 10rpt;
   z-index: 1;
-  margin-top: -20rpx;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.quick-layout{
+.quick-layout-content{
   display: flex;
   width: 710rpx;
   margin-left: 20rpx;
@@ -50,6 +50,21 @@ page{
   font-size: 24rpx;
   margin-top: 5rpx;
 }
+
+.quick-layout-content:ti{
+  display: flex;
+  width: 710rpx;
+ justify-content:space-between;
+}
+
+.simple-linear {
+  width: 5rpx;
+  height: 30rpx;
+  align-items:flex-start;
+  background: linear-gradient(rgb(216, 81, 99),red);
+}
+
+
 
 .avatar {
   height: 50rpx;

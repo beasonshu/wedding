@@ -13,10 +13,12 @@
     </swiper>
   </view>
 
-  <view class="main-content">
-    <view class="quick-layout">
-      <view class="quick-item" bindtap='webDetail'>
-        <image src='../image/quick_1.png' class='avatar' />
+
+  <view class="card-layout" style="margin-top: -20rpx;">
+    <view class="quick-layout-content">
+      <view class="quick-item">
+
+        <image src='../image/quick_1.png' class='avatar' bindtap='webDetail'/>
         <text class="quick-item.text">福利专区</text>
       </view>
       <view class="quick-item">
@@ -32,6 +34,21 @@
         <text class="quick-item.text">联系我们</text>
       </view>
     </view>
+
   </view>
 
+  <view class="card-layout" style="margin-top:20rpx;">
+    <view class="quick-layout-content:ti">
+      <view style="display: flex;">
+      <view class="simple-linear"/><text>www</text>
+      </view>
+      <view class="simple-linear"/>
+    </view>
+
+  </view>
+
+
+  <view wx:for="{{for_list}}" wx:for-index="index" wx:for-item="item">
+    <text>这是第{{index}}个，他的name是{{item.name}}</text>
+  </view>
 </view>

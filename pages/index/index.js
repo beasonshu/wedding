@@ -26,7 +26,8 @@ Page({
     duration: 1000,
     circular: true,
     loadingHidden: true,
-    ic_avatar: 'https://upload.jianshu.io/users/upload_avatars/6095830/2c92a70e-0a32-4347-bc1b-419536019afc?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240'
+    ic_avatar: 'https://upload.jianshu.io/users/upload_avatars/6095830/2c92a70e-0a32-4347-bc1b-419536019afc?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240',
+    for_list: [{ "name": "q" }, { "name": "2" }, { "name": "3" }]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -89,8 +90,6 @@ Page({
 
         ]
       });
-
-      this.onLoad();
       wx.stopPullDownRefresh(); //通过方法调用刷新
     }, 1000)
   },
