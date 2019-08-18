@@ -36,7 +36,7 @@
     </view>
   </view>
 
-  <view class="card-layout" style="margin-top:30rpx;">
+  <view class="card-layout" style="margin-top:30rpx; align-items:center;">
     <view class="header-tilte-layout">
       <view class="header-tilte-left-layout">
         <view class="simple-linear" />
