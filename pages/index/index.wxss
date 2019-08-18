@@ -30,6 +30,7 @@ page {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .quick-layout-content {
@@ -132,12 +133,14 @@ page {
   display: flex;
   justify-content: space-between;
   width: 710rpx;
-   align-self: flex-end;
+  align-self: flex-end;
 }
 
-.banquet-label-layout-left{
-  display: flex;align-self: flex-end;
+.banquet-label-layout-left {
+  display: flex;
+  align-self: flex-end;
 }
+
 .banquet-label-desc {
   font-family: Microsoft YaHei;
   align-items: center;
@@ -149,7 +152,7 @@ page {
   margin-left: 20rpx;
 }
 
-.banquet-label-button{
+.banquet-label-button {
   font-family: Microsoft YaHei;
   align-items: center;
   font-size: 30rpx;
@@ -158,4 +161,19 @@ page {
   color: white;
   padding: 5rpx 25rpx 5rpx 25rpx;
   margin-right: 20rpx;
+}
+
+.more-btn-layout {
+  display: flex;
+  font-family: Microsoft YaHei;
+  margin-top: 30rpx;
+  align-items: center;
+  justify-content: center;
+  height: 50rpx;
+  font-size: 25rpx;
+  background-color: red;
+  border-radius: 15rpx;
+  color: white;
+  width: 670rpx;
+  margin-bottom: 30rpx;
 }

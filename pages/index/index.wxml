@@ -58,8 +58,12 @@
         </view>
         <text class="banquet-label-button">查看</text>
       </view>
-
     </block>
+
+    <view class="more-btn-layout">
+      <text >查看更多</text>
+    </view>
+
   </view>
 
 
