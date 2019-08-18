@@ -47,17 +47,20 @@
         <view class="right-arrow" />
       </view>
     </view>
-    <block wx:for="{{dataList.banquet}}" wx:for-index="index" wx:for-item="item" wx:if="{{index<3}}">
+    <block wx:for="{{dataList.banquet}}" wx:key='id' wx:for-index="index" wx:if="{{index<3}}" wx:for-item='item'>
       <image src=" {{item.thumbnail}} " class="thumbnail" />
       <text class="banquet-name-text">{{item.title}}</text>
-      <view > 
-       <text class="banquet-name-text">{{item.square}}</text>
-        <text class="banquet-name-text">{{item.floors}}</text>
-         <text class="banquet-name-text">{{item.tables}}</text>
+      <view class="banquet-label-layout">
+        <view class="banquet-label-layout-left">
+          <text class="banquet-label-desc">{{item.square}}</text>
+          <text class="banquet-label-desc">{{item.floors}}</text>
+          <text class="banquet-label-desc">{{item.tables}}</text>
+        </view>
+        <text class="banquet-label-button">查看</text>
       </view>
+
     </block>
   </view>
-
 
 
 

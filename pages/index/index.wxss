@@ -127,8 +127,35 @@ page {
   padding-left: 20rpx;
   margin-top: 10rpx;
 }
-.banquet-label-text{
+
+.banquet-label-layout {
+  display: flex;
+  justify-content: space-between;
+  width: 710rpx;
+   align-self: flex-end;
+}
+
+.banquet-label-layout-left{
+  display: flex;align-self: flex-end;
+}
+.banquet-label-desc {
   font-family: Microsoft YaHei;
   align-items: center;
-  color: rgb(192, 67, 67);
+  font-size: 25rpx;
+  color: rgba(255, 0, 0, 0.555);
+  border: 1rpx solid rgba(255, 0, 0, 0.555);
+  border-radius: 10rpx;
+  padding: 0 10rpx 0 10rpx;
+  margin-left: 20rpx;
+}
+
+.banquet-label-button{
+  font-family: Microsoft YaHei;
+  align-items: center;
+  font-size: 30rpx;
+  background-color: red;
+  border-radius: 15rpx;
+  color: white;
+  padding: 5rpx 25rpx 5rpx 25rpx;
+  margin-right: 20rpx;
 }
