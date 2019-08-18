@@ -157,7 +157,7 @@ page {
   align-items: center;
   font-size: 30rpx;
   background-color: red;
-  border-radius: 15rpx;
+  border-radius: 25rpx;
   color: white;
   padding: 5rpx 25rpx 5rpx 25rpx;
   margin-right: 20rpx;
@@ -169,10 +169,10 @@ page {
   margin-top: 30rpx;
   align-items: center;
   justify-content: center;
-  height: 50rpx;
+  height: 70rpx;
   font-size: 25rpx;
   background-color: red;
-  border-radius: 15rpx;
+  border-radius: 20rpx;
   color: white;
   width: 670rpx;
   margin-bottom: 30rpx;
