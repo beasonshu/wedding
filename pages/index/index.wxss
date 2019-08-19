@@ -248,12 +248,19 @@ page {
   display: flex;
   flex: 1 auto;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
-
+.user-font{
+  color: red;
+  font-size: 20rpx;
+}
 .booking-layout {
   display: flex;
   flex: 2 auto;
   align-items: center;
   justify-content: center;
+  background: red;
+  color: white;
+  font-size: 30rpx;
 }
