@@ -89,8 +89,8 @@ page {
 
 .header-tilte-right-layout {
   display: flex;
-  margin-right: 20rpx;
   align-items: center;
+  margin-right: 30rpx;
   flex-direction: row;
 }
 
@@ -121,11 +121,12 @@ page {
 
 .banquet-name-text {
   font-family: Microsoft YaHei;
-  align-items: center;
+  align-items: left center;
   font-size: 30rpx;
   color: black;
   padding-left: 20rpx;
   margin-top: 10rpx;
+  width: 690rpx;
 }
 
 .banquet-label-layout {
@@ -176,3 +177,41 @@ page {
   width: 670rpx;
   margin-bottom: 30rpx;
 }
+
+.menu-tilte-left-layout {
+  display: flex;
+  align-items: center;
+}
+
+.menu-text-layout {
+  display: flex;
+  justify-content: space-between;
+  width: 670rpx;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx dashed lightgray;
+}
+
+.menu-layout-right {
+  font-family: Microsoft YaHei;
+  align-items: center;
+  font-size: 25rpx;
+  font-weight: lighter;
+  color: black;
+}
+
+.menu-left-text {
+  font-family: Microsoft YaHei;
+  align-items: center;
+  font-size: 28rpx;
+  color: black;
+}
+
+.menu-right-text {
+  font-family: Microsoft YaHei;
+  align-items: center;
+  font-size: 25rpx;
+  color: black;
+}
+
