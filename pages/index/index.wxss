@@ -193,6 +193,17 @@ page {
   border-bottom: 1rpx dashed lightgray;
 }
 
+
+
+.menu-text-layout-no-dash {
+  display: flex;
+  justify-content: space-between;
+  width: 670rpx;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
 .menu-layout-right {
   font-family: Microsoft YaHei;
   align-items: center;

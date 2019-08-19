@@ -76,7 +76,7 @@
       </view>
     </view>
     <block wx:for="{{dataList.menu}}" wx:key='id' wx:for-index="index" wx:if="{{index<3}}" wx:for-item='item'>
-      <view class="menu-text-layout">
+      <view class="menu-text-layout{{index<2?'':'-no-dash'}}">
         <view class="menu-tilte-left-layout">
           <text class="menu-left-text">{{item.name}}</text>
         </view>
@@ -84,8 +84,20 @@
           <text class="menu-right-text">￥ {{item.price}}元/桌</text>
         </view>
       </view>
-     
     </block>
+  </view>
+
+  <view class="card-layout" style="margin-top:30rpx; align-items:center;">
+    <view class="header-tilte-layout">
+      <view class="header-tilte-left-layout">
+        <view class="simple-linear" />
+        <text class="header-tilte-layout-left-text">宴会厅</text>
+      </view>
+      <view class="header-tilte-right-layout">
+        <text class="header-tilte-layout-right-text">共{{dataList.menu.length}}个</text>
+        <view class="right-arrow" />
+      </view>
+    </view>
   </view>
 
 
