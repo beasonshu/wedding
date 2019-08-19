@@ -193,8 +193,6 @@ page {
   border-bottom: 1rpx dashed lightgray;
 }
 
-
-
 .menu-text-layout-no-dash {
   display: flex;
   justify-content: space-between;
@@ -226,3 +224,19 @@ page {
   color: black;
 }
 
+.banquetDescription-text {
+  font-family: Microsoft YaHei;
+  align-items: left center;
+  font-size: 25rpx;
+  width: 670rpx;
+  color: black;
+  font-weight: lighter;
+}
+
+.page__hd {
+  z-index: 10;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+}
