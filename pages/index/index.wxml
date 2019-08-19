@@ -100,8 +100,12 @@
 
 
   <!-- 底部固定 -->
-  <view class="page__hd">
-
-  <text class="iconfont icon-yonghu:before"/>
+  <view class="fixed-bottom-layout">
+    <view class="user-layout">
+      <text class="iconfont icon-yonghu" style="color:red;" />
+    </view>
+    <view class="booking-layout">
+      <text class="iconfont icon-yonghu" style="color:red;" />
+    </view>
   </view>
 </view>
