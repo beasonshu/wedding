@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    windowHeight: '',
     userInfo: {},
     hasUserInfo: false,
     //canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -37,6 +38,10 @@ Page({
     })
   },
   onLoad: function () {
+    var windowHeight = wx.getSystemInfoSync().windowHeight;//获取设备高度，小程序自带的方法
+    this.setData({
+      windowHeight: windowHeight
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
