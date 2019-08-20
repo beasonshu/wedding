@@ -9,5 +9,5 @@
   box-sizing: border-box;
   background-color:#f8f8f8;
   margin-bottom: 100rpx;
-  padding-bottom: 20rpx;
+  padding-bottom: 100rpx;
 }

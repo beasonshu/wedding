@@ -98,13 +98,13 @@
     <image src=" {{dataList.banquetDescription.url}} " class="thumbnail" />
     <text class="banquetDescription-text">{{dataList.banquetDescription.detail}}</text>
   </view>
+</view> 
 
-  <!-- 底部固定 -->
-  <!-- <view class="fixed-bottom-layout">
+<!-- 底部固定 -->
+  <view class="fixed-bottom-layout">
     <view class="user-layout">
       <text class="iconfont icon-yonghu" style="color:red; font-weight: lighter;" />
       <text class="user-font">我的</text>
     </view>
     <text class="booking-layout">立即预约</text>
-  </view>-->
-</view> 
+  </view>
