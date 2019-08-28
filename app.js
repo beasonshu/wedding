@@ -10,6 +10,10 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.request({
+          url: 'http://192.168.176.40:828'
+          // 省略其他参数
+        })
       }
     })
     // 获取用户信息

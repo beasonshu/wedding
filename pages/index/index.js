@@ -7,7 +7,7 @@ Page({
     windowHeight: '',
     userInfo: {},
     hasUserInfo: false,
-    //canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imgUrls: [{
       'id': 0,
       'img': 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2062955420,1345462341&fm=26&gp=0.jpg'
@@ -116,7 +116,7 @@ Page({
   webDetail: function () {
     wx.navigateTo({
       //保留当前页面，跳转到应用内的某个页面（最多打开5个页面，之后按钮就没有响应的）
-      url: "/pages/web/web?url=http://www.jxgztv.com/spxw/333984.jhtml"
+      url: "/pages/web/web?url=	https://yf-investment.cn/swagger-ui.html"
     })
   }
 })
