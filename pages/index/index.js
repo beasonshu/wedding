@@ -7,7 +7,6 @@ Page({
     visible: false,
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imgUrls: [{
       'id': 0,
       'img': 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2062955420,1345462341&fm=26&gp=0.jpg'
@@ -136,11 +135,13 @@ Page({
     this.Modal.showModal();
 
   },
-  _confirmEventFirst: function () {
+  _confirmEventFirst(e) {
     console.log("点击确定了!");
+    app.globalData.userInfo = e.detail.userInfo;
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    });
     this.Modal.hideModal();
-  },
-  _cancelEvent: function () {
-    console.log("点击取消!");
   }
 })

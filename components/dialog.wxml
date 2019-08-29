@@ -13,9 +13,9 @@
     <view class='modal-body'>
       <slot></slot>
     </view>
-    <view class='modal-footer'>
-      <text catchtap='_cancelModal' class='btn btn-default'>{{cancelText}}</text>
-      <text catchtap='_confirmModal' class='btn btn-primary'>{{confirmText}}</text>
+    <view class='modal-footer' >
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" class='btn btn-primary' bindgetuserinfo="_confirmModal">{{confirmText}}</button>
+    <view wx:else>请升级微信版本</view>
     </view>
   </view>
 </view>

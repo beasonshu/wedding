@@ -100,17 +100,17 @@
   </view>
 </view> 
 <dialog id="modal"
-            title="这里是标题"
-            cancelText="再想想"
-            confirmText="确认提交"
-            bind:cancelEvent="_cancelEvent"  
+            title=""
+            cancelText="22"
+            confirmText="确认"
             bind:confirmEvent="_confirmEventFirst" 
             >
 
     <view class='modal-body'>
-        <view> 这是自定义内容1 </view>     
-        <view> 这是自定义内容2 </view>    
-        <view> 这是自定义内容3 </view>    
+        <view style=" display: flex;justify-content: center; align-items:center;">
+          <text>前往授权才能继续操作</text>
+        </view>     
+       
     </view>
 
 </dialog>

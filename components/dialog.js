@@ -23,6 +23,10 @@ Component({
       type: Boolean,
       value: true
     },
+    isShowLeftBtn: {
+      type: Boolean,
+      value: true
+    },
 
     animated: {
       type: Boolean,
@@ -41,7 +45,7 @@ Component({
       value: {
         duration: 300
       }
-    },
+    }
   },
 
   /**
@@ -49,7 +53,8 @@ Component({
    */
   data: {
     isShow: false,
-    animation: ''
+    animation: '',
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
   myCatchTouch: function () {
@@ -134,15 +139,10 @@ Component({
 
 
     },
-    //取消事件 向外部page 发送事件通知
-    _cancelModal: function() {
-      this.hideModal();
-      this.triggerEvent("cancelEvent");
-    },
 
     //确认事件
-    _confirmModal: function() {
-      this.triggerEvent("confirmEvent");
+    _confirmModal: function(e) {
+      this.triggerEvent("confirmEvent",e.detail);
     }
 
   }

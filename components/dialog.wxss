@@ -1,101 +1,114 @@
 /* dialog/dialog.wxss */
-.modal{
-    position: fixed;
-    top: 0rpx;
-    left: 0rpx;
-    right: 0rpx;
-    bottom: 0rpx;
-    width: 100%;
-    height: 100%; 
-    z-index: 100;
-  }
-  
-  .modal-mask{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 97;
-    background-color: rgba(0,0,0,0.60);
-  }
-  
-  
-  .modal-layer-sm{
-     width: 60%; 
-     transform : translate3d(-50%,-50%,0);
-     left : 50%;  
-  } 
-  
-  .modal-layer-md{
-     width: 80%; 
-     transform : translate3d(-50%,-50%,0);
-     left : 50%;    
-  } 
-  
-  .modal-layer-full{
-     width: 100%; 
-     left: 0;  
-  } 
-  
-  
-  .modal-layer{
-    position: absolute;
-    background: transparent;
-    top: 50%;    
-    display: flex;
-    flex-direction: column;
-    z-index: 98;   
-    box-shadow: 0 4rpx 14rpx rgba(0,0,0,.4); 
-  }
-  
-  .modal-header{
-    background: #fff;
-    color:  #333;
-    padding: 20rpx;
-    font-size: 30rpx;
-    text-align: center;
-    border-top-left-radius: 10rpx;
-    border-top-right-radius: 10rpx;  
- }
 
-  .modal-body{
-    flex:  1;  
-    padding: 0 40px 40rpx;
-    background: #ffffff;  
-  }
-
-  
-
-.modal-footer{
-    background: #ffffff;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    width: 100%;  
-    border-top : 1rpx solid #eee;   
-    border-bottom-left-radius: 10rpx;
-    border-bottom-right-radius: 10rpx;  
+.modal {
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 }
 
-.modal-close{
-    color: #fff;
-    font-size: 48rpx;
-    position: absolute;
-    right: 40rpx;
-    top: 0;
-    z-index: 98;
+.modal-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 97;
+  background-color: rgba(0, 0, 0, 0.60);
 }
 
+.modal-layer-sm {
+  width: 60%;
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
+}
 
-.btn{ 
-  flex: 1; 
-  text-align: center;   
+.modal-layer-md {
+  width: 80%;
+  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
+}
+
+.modal-layer-full {
+  width: 100%;
+  left: 0;
+}
+
+.modal-layer {
+  position: absolute;
+  background: transparent;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 98;
+  box-shadow: 0 4rpx 14rpx rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+  background: #fff;
+  color: #333;
+  padding: 20rpx;
   font-size: 30rpx;
-  color:#666;
-  padding:  19rpx 5rpx;
+  text-align: center;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
 }
-.btn:first-child{
-    border-right: 1px solid #eee;
+
+.modal-body {
+  flex: 1;
+  padding: 0 40px 40rpx;
+  background: #fff;
 }
-.btn-primary{
-  color: #009887;   
+
+.modal-footer {
+  background: #fff;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1rpx solid #eee;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.modal-close {
+  color: #fff;
+  font-size: 48rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 0;
+  z-index: 98;
+}
+
+.free-btn-bordernone {
+  background: none !important;
+  color: #000 !important;
+}
+
+.free-btn-bordernone::after {
+  border: none;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 19rpx 5rpx;
+  border: 0;
+  border-radius: 0;
+}
+
+button::after {
+  border-radius: 0;
+}
+
+button {
+  border-radius: 0;
+  background-color:white;
+}
+
+.btn-primary {
+  color: #009887;
 }
