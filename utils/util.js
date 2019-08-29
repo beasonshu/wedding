@@ -19,6 +19,8 @@ module.exports = {
 }
 
 
+
+
 /**
  * 封封微信的的request
  */
@@ -45,9 +47,9 @@ function request(url, data = {}, method = "GET") {
               // Do something when catch error
             }
             // 切换到登录页面
-            wx.navigateTo({
-              url: '/pages/auth/login/login'
-            });
+            // wx.navigateTo({
+            //   url: '/pages/auth/login/login'
+            // });
           } else {
             resolve(res.data);
           }

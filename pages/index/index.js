@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    windowHeight: '',
+    visible: false,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -37,11 +37,23 @@ Page({
       url: '../logs/logs'
     })
   },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    this.Modal = this.selectComponent("#modal");
+  },
   onLoad: function () {
-    var windowHeight = wx.getSystemInfoSync().windowHeight;//获取设备高度，小程序自带的方法
-    this.setData({
-      windowHeight: windowHeight
-    })
+    wx.getUserInfo({
+      success: res => {
+        app.globalData.userInfo = res.userInfo
+        console.log(res);
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      }
+    });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -114,9 +126,21 @@ Page({
     })
   },
   webDetail: function () {
-    wx.navigateTo({
-      //保留当前页面，跳转到应用内的某个页面（最多打开5个页面，之后按钮就没有响应的）
-      url: "/pages/web/web?url=	https://yf-investment.cn/swagger-ui.html"
-    })
+    // wx.navigateTo({
+    //   //保留当前页面，跳转到应用内的某个页面（最多打开5个页面，之后按钮就没有响应的）
+    //   url: "/pages/web/web?url=	https://yf-investment.cn/swagger-ui.html"
+    // })
+    this.Modal.showModal();
+  },
+  _onShowModal: function (e) {
+    this.Modal.showModal();
+
+  },
+  _confirmEventFirst: function () {
+    console.log("点击确定了!");
+    this.Modal.hideModal();
+  },
+  _cancelEvent: function () {
+    console.log("点击取消!");
   }
 })
