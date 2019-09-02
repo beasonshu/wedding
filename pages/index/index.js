@@ -4,7 +4,6 @@ const app = getApp()
 
 Page({
   data: {
-    visible: false,
     userInfo: {},
     hasUserInfo: false,
     imgUrls: [{
@@ -129,19 +128,24 @@ Page({
     //   //保留当前页面，跳转到应用内的某个页面（最多打开5个页面，之后按钮就没有响应的）
     //   url: "/pages/web/web?url=	https://yf-investment.cn/swagger-ui.html"
     // })
-    this.Modal.showModal();
   },
   _onShowModal: function (e) {
-    this.Modal.showModal();
-
+    if (!this.data.hasUserInfo) {
+      this.Modal.showModal();
+    }
   },
   _confirmEventFirst(e) {
-    console.log("点击确定了!");
-    app.globalData.userInfo = e.detail.userInfo;
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    });
+    if (!this.data.hasUserInfo){
+      app.globalData.userInfo = e.detail.userInfo;
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo: true
+      });
+    }else{
+      wx.showToast({
+        title: '已经获取用户信息',
+      })
+    }
     this.Modal.hideModal();
   }
 })
