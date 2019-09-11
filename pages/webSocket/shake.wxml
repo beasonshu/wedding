@@ -1,0 +1,8 @@
+<view class="container">
+<button bindtap="sendmsg">按我</button>
+  <view wx:for="{{arr}}" wx:key="id">
+    {{item.nickName}}
+    <image style="width:90px;height:90px;" src="{{item.avatarUrl}}"></image>
+    {{item.n}}
+  </view>
+</view>

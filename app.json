@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/web/web",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/webSocket/shake"
   ],
   "window": {
     "backgroundTextStyle": "dark",
